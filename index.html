@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>HTML Todo List | Major Project</title>
         <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">       
+        <link rel="stylesheet" type="text/css" href="vendor/fontawesome/fontawesomeall.min.css">
+        <link rel="stylesheet" href="vendor/bootstrap/bootstrap-icons.css">    
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -159,8 +159,8 @@
                             html = html +'<tr>'
                                         +'<td>'+ (parseInt(i)+1) +'</td>'
                                         +'<td>'+ storageObjectArr[i]['taskDescription'] +'</td>'
-                                        +'<td>'+ storageObjectArr[i]['taskResponsibleDescription'] +'</td>'
-                                        +'<td>'+ date.toUTCString() +'</td>'
+                                        +'<td>'+ storageObjectArr[i]['taskResponsiblePerson'] +'</td>'
+                                        +'<td>'+ new Date(storageObjectArr[i]['taskETA']).toUTCString() +'</td>'
                                         +'<td><i class="bi bi-check-circle-fill" onclick="markAsDone('+i+')"></i><i class="bi bi-pencil-square" onclick="editTask('+i+')"></i></td></tr>'
                         }
                     }else{
