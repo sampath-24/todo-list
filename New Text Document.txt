@@ -1,5 +1,0 @@
-MAJOR PROJECT
--->simple to-do list without any intervention of the back-end
--->major project concentrated on - browser storage api
--->it is simple hmtl using - bootstrap, jquery, and a html code
--->js we will be needed is -jquery, 2poper.min.js, bootstap.js
